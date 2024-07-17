@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // 상태바, 네비게이션바 지우기
     private fun hideSystemUI() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         WindowInsetsControllerCompat(window, activityMainBinding.fragmentContainer).let { controller ->
